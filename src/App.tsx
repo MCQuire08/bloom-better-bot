@@ -12,6 +12,8 @@ import Regalos from "./pages/Regalos.tsx";
 import Perfumes from "./pages/Perfumes.tsx";
 import Suscripcion from "./pages/Suscripcion.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import Productos from "./pages/Productos.tsx";
+import Categoria from "./pages/Categoria.tsx";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +26,8 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/productos" element={<Productos />} />
+            <Route path="/categoria/:subcategoria" element={<Categoria />} />
             <Route path="/grandes" element={<Grandes />} />
             <Route path="/pequenos" element={<Pequenos />} />
             <Route path="/boda" element={<Boda />} />

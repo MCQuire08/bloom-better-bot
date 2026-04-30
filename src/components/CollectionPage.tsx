@@ -32,8 +32,8 @@ const CollectionPage = ({ eyebrow, title, description, heroImage, products }: Pr
     {/* Products */}
     <section className="container py-24">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
-        {products.map((p) => (
-          <ProductCard key={p.name} product={p} />
+        {products.map((p, i) => (
+          <ProductCard key={p.id || p.name + i} product={p} />
         ))}
       </div>
     </section>

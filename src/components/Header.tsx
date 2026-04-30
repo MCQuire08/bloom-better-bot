@@ -1,17 +1,35 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X, ShoppingBag } from "lucide-react";
+import { Menu, X, ShoppingBag, ChevronDown } from "lucide-react";
 import Logo from "./Logo";
 import { useCart } from "@/context/CartContext";
 
-const links = [
+const navItems = [
   { to: "/", label: "Inicio" },
-  { to: "/grandes", label: "Ramos Grandes" },
-  { to: "/pequenos", label: "Ramos Pequeños" },
-  { to: "/boda", label: "Boda" },
-  { to: "/regalos", label: "Regalos" },
-  { to: "/perfumes", label: "Perfumes" },
-  { to: "/suscripcion", label: "Miembro Golden" },
+  { to: "/productos", label: "Catálogo General" },
+  {
+    label: "Ramos",
+    items: [
+      { to: "/categoria/ramos-grandes", label: "Ramos Grandes" },
+      { to: "/categoria/ramos-pequenos", label: "Ramos pequeños" },
+      { to: "/categoria/cajas-y-jarrones", label: "Cajas y Jarrones" },
+      { to: "/categoria/boda", label: "Boda" },
+    ]
+  },
+  {
+    label: "Regalos",
+    items: [
+      { to: "/categoria/dulces", label: "Dulces" },
+      { to: "/categoria/peluches", label: "Peluches" },
+    ]
+  },
+  {
+    label: "Perfumes",
+    items: [
+      { to: "/categoria/hombres", label: "Hombres" },
+      { to: "/categoria/mujeres", label: "Mujeres" },
+    ]
+  },
 ];
 
 const Header = () => {
@@ -35,19 +53,44 @@ const Header = () => {
         <Logo />
 
         <nav className="hidden lg:flex items-center gap-8">
-          {links.slice(0, 6).map((l) => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              end={l.to === "/"}
-              className={({ isActive }) =>
-                `text-sm tracking-wide uppercase transition-colors hover:text-primary ${
-                  isActive ? "text-primary" : "text-foreground/80"
-                }`
-              }
-            >
-              {l.label}
-            </NavLink>
+          {navItems.map((item) => (
+            item.to ? (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.to === "/"}
+                className={({ isActive }) =>
+                  `text-sm tracking-wide uppercase transition-colors hover:text-primary ${
+                    isActive ? "text-primary" : "text-foreground/80"
+                  }`
+                }
+              >
+                {item.label}
+              </NavLink>
+            ) : (
+              <div key={item.label} className="relative group cursor-pointer">
+                <span className="flex items-center gap-1 text-sm tracking-wide uppercase text-foreground/80 transition-colors group-hover:text-primary">
+                  {item.label} <ChevronDown size={14} />
+                </span>
+                <div className="absolute top-full left-0 pt-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all">
+                  <div className="bg-background border border-border shadow-soft min-w-[200px] py-2 flex flex-col">
+                    {item.items?.map((subItem) => (
+                      <NavLink
+                        key={subItem.to}
+                        to={subItem.to}
+                        className={({ isActive }) =>
+                          `px-4 py-2 text-sm uppercase tracking-wider transition-colors hover:bg-secondary hover:text-primary ${
+                            isActive ? "text-primary bg-secondary/50" : "text-foreground/80"
+                          }`
+                        }
+                      >
+                        {subItem.label}
+                      </NavLink>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )
           ))}
         </nav>
 
@@ -96,20 +139,42 @@ const Header = () => {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-background border-t border-border animate-fade-in">
+        <div className="lg:hidden bg-background border-t border-border animate-fade-in max-h-[calc(100vh-5rem)] overflow-y-auto">
           <nav className="container py-6 flex flex-col gap-4">
-            {links.map((l) => (
-              <NavLink
-                key={l.to}
-                to={l.to}
-                end={l.to === "/"}
-                onClick={() => setOpen(false)}
-                className={({ isActive }) =>
-                  `text-base tracking-wide uppercase py-2 ${isActive ? "text-primary" : "text-foreground/80"}`
-                }
-              >
-                {l.label}
-              </NavLink>
+            {navItems.map((item) => (
+              item.to ? (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  end={item.to === "/"}
+                  onClick={() => setOpen(false)}
+                  className={({ isActive }) =>
+                    `text-base tracking-wide uppercase py-2 ${isActive ? "text-primary" : "text-foreground/80"}`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              ) : (
+                <div key={item.label} className="flex flex-col gap-2 py-2">
+                  <span className="text-base tracking-wide uppercase text-foreground/50">
+                    {item.label}
+                  </span>
+                  <div className="flex flex-col gap-3 pl-4 border-l border-border">
+                    {item.items?.map((subItem) => (
+                      <NavLink
+                        key={subItem.to}
+                        to={subItem.to}
+                        onClick={() => setOpen(false)}
+                        className={({ isActive }) =>
+                          `text-sm tracking-wide uppercase ${isActive ? "text-primary" : "text-foreground/80"}`
+                        }
+                      >
+                        {subItem.label}
+                      </NavLink>
+                    ))}
+                  </div>
+                </div>
+              )
             ))}
           </nav>
         </div>
