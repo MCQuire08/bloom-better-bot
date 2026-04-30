@@ -1,14 +1,8 @@
+import { productos } from "@/data/productos";
 import CollectionPage from "@/components/CollectionPage";
 import img from "@/assets/collection-grandes.jpg";
 
-const products = [
-  { name: "Caja Premium Rosas Rojas", price: 38000, image: img, tag: "Bestseller" },
-  { name: "Jarrón Cristal Lirios", price: 45000, image: img },
-  { name: "Caja Acrílica Mixta", price: 32000, image: img },
-  { name: "Jarrón Dorado Peonías", price: 52000, image: img, tag: "Nuevo" },
-  { name: "Caja Sombrero Blanca", price: 36000, image: img },
-  { name: "Jarrón Minimalista", price: 28000, image: img },
-];
+const products = productos.filter(p => p.subcategoria === "Cajas y Jarrones");
 
 const CajasJarrones = () => (
   <CollectionPage

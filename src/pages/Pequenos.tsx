@@ -1,14 +1,8 @@
+import { productos } from "@/data/productos";
 import CollectionPage from "@/components/CollectionPage";
 import img from "@/assets/collection-pequenos.jpg";
 
-const products = [
-  { name: "Mini Girasoles", price: 18000, image: img, tag: "Bestseller" },
-  { name: "Margaritas Blancas", price: 15000, image: img },
-  { name: "Rosas Mini", price: 20000, image: img },
-  { name: "Tulipán 6 unid.", price: 16000, image: img },
-  { name: "Lavanda y Eucalipto", price: 17000, image: img, tag: "Nuevo" },
-  { name: "Detalle Primavera", price: 14000, image: img },
-];
+const products = productos.filter(p => p.subcategoria === "Ramos pequeños");
 
 const Pequenos = () => (
   <CollectionPage
