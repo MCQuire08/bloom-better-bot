@@ -8,7 +8,7 @@ import pequenosImg from "@/assets/collection-pequenos.jpg";
 import bodaImg from "@/assets/collection-boda.jpg";
 import regalosImg from "@/assets/collection-regalos.jpg";
 import perfumesImg from "@/assets/collection-perfumes.jpg";
-import ramoMesImg from "@/assets/ramo-mes.jpg";
+import ramoMesImg from "@/assets/ramo-mes.jpeg";
 
 const collections = [
   { to: "/grandes", label: "Ramos Grandes", img: grandesImg, desc: "Para los gestos inolvidables" },
@@ -67,10 +67,7 @@ const Index = () => {
                 <p className="font-serif text-3xl text-primary">500+</p>
                 <p className="text-xs tracking-wider uppercase text-muted-foreground">Clientes felices</p>
               </div>
-              <div>
-                <p className="font-serif text-3xl text-primary">12</p>
-                <p className="text-xs tracking-wider uppercase text-muted-foreground">Años de arte</p>
-              </div>
+              
               <div>
                 <p className="font-serif text-3xl text-primary">100%</p>
                 <p className="text-xs tracking-wider uppercase text-muted-foreground">Hecho a mano</p>
@@ -105,7 +102,7 @@ const Index = () => {
       <section className="border-y border-border bg-card">
         <div className="container grid grid-cols-2 lg:grid-cols-4 gap-8 py-12">
           {[
-            { icon: Truck, title: "Envío en el día", desc: "Gran Área Metropolitana" },
+            { icon: Truck, title: "Envíos", desc: "Gran Área Metropolitana" },
             { icon: Heart, title: "Hecho a mano", desc: "Cada arreglo es único" },
             { icon: Award, title: "Flores premium", desc: "Frescura garantizada" },
             { icon: Sparkles, title: "Empaque de lujo", desc: "Listo para regalar" },
@@ -125,9 +122,9 @@ const Index = () => {
       <section className="container py-24 md:py-32">
         {/* Mobile Title */}
         <div className="block lg:hidden mb-8 space-y-4">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Abril</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Mayo</p>
           <h2 className="font-serif text-5xl md:text-6xl leading-tight">
-            Tulipán <span className="italic text-gradient-gold">20 unidades</span>
+            Girasol <span className="italic text-gradient-gold">12 unidades</span>
           </h2>
         </div>
 
@@ -146,28 +143,29 @@ const Index = () => {
           <div className="space-y-6 order-2">
             {/* Desktop Title */}
             <div className="hidden lg:block space-y-6">
-              <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Abril</p>
+              <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Mayo</p>
               <h2 className="font-serif text-5xl md:text-6xl leading-tight">
-                Tulipán <span className="italic text-gradient-gold">20 unidades</span>
+                Girasol <span className="italic text-gradient-gold">12 unidades</span>
               </h2>
             </div>
             <div className="w-16 h-px bg-primary hidden lg:block" />
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Veinte tulipanes frescos en tonos cálidos de rojo, naranja y amarillo,
-              envueltos en papel kraft con lazo dorado. Una explosión de primavera
-              hecha para conmover.
+              Doce girasoles frescos con astromelia en tonos cálidos de rosa,
+              envueltos en papel negro con lazo. Una explosión de primavera
+              hecha para alegrar tu día.
             </p>
+            
             <div className="flex items-baseline gap-3">
               <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Precio</span>
-              <span className="font-serif text-4xl text-primary">₡ 30 000</span>
+              <span className="font-serif text-4xl text-primary">₡ 25 000</span>
             </div>
             <div className="flex gap-4 pt-4">
               <button
                 onClick={() =>
                   addItem({
-                    id: "ramo-mes-tulipan-abril",
-                    name: "Tulipán 20 unidades — Ramo del Mes",
-                    price: 30000,
+                    id: "ramo-mes-girasol-mayo",
+                    name: "Girasol — Ramo del Mes",
+                    price: 25000,
                     image: ramoMesImg,
                   })
                 }
