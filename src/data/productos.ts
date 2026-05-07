@@ -1212,7 +1212,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-148",
-    "name": "Rosa/Girasol/Gierbera",
+    "name": "Rosa/Girasol/Gerbera",
     "price": 7500,
     "image": "/productos/ramos/peque/ram3PeqGirarsolGierberaRosa1.png",
     "categoria": "Ramos",
@@ -1221,7 +1221,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-149",
-    "name": "2 Rosas/1Gierbera",
+    "name": "2 Rosas/1Gerbera",
     "price": 6000,
     "image": "/productos/ramos/peque/ram3PeqRosaGierbera1.png",
     "categoria": "Ramos",
@@ -1230,7 +1230,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-145",
-    "name": "Girasol/Gierbera",
+    "name": "Girasol/Gerbera",
     "price": 25000,
     "image": "/productos/ramos/peque/ram2PeqGirasolGierbera1.png",
     "categoria": "Ramos",
@@ -1239,7 +1239,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-142",
-    "name": "2 Gierberas",
+    "name": "2 Gerberas",
     "price": 6000,
     "image": "/productos/ramos/peque/ram2PeGierbera1.png",
     "categoria": "Ramos",
@@ -1248,7 +1248,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-144",
-    "name": "2 Gierberas",
+    "name": "2 Gerberas",
     "price": 6000,
     "image": "/productos/ramos/peque/ram2PeGierbera3.png",
     "categoria": "Ramos",
@@ -1288,7 +1288,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-143",
-    "name": "2 Gierberas",
+    "name": "2 Gerberas",
     "price": 6000,
     "image": "/productos/ramos/peque/ram2PeGierbera2.jpeg",
     "categoria": "Ramos",
@@ -1297,7 +1297,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-135",
-    "name": "Gierbera",
+    "name": "Gerbera",
     "price": 4500,
     "image": "/productos/ramos/peque/ram1PeGierbera1.jpeg",
     "categoria": "Ramos",
@@ -1306,7 +1306,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-136",
-    "name": "Gierbera",
+    "name": "Gerbera",
     "price": 4500,
     "image": "/productos/ramos/peque/ram1PeGierbera2.jpeg",
     "categoria": "Ramos",
@@ -1315,7 +1315,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-137",
-    "name": "Gierbera",
+    "name": "Gerbera",
     "price": 4500,
     "image": "/productos/ramos/peque/ram1PeGierbera3.jpeg",
     "categoria": "Ramos",
@@ -1324,7 +1324,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-138",
-    "name": "Gierbera",
+    "name": "Gerbera",
     "price": 4500,
     "image": "/productos/ramos/peque/ram1PeGierbera4.jpeg",
     "categoria": "Ramos",
@@ -1333,7 +1333,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-139",
-    "name": "Gierbera",
+    "name": "Gerbera",
     "price": 4500,
     "image": "/productos/ramos/peque/ram1PeGierbera5.jpeg",
     "categoria": "Ramos",
@@ -1342,7 +1342,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-140",
-    "name": "Gierbera",
+    "name": "Gerbera",
     "price": 4500,
     "image": "/productos/ramos/peque/ram1PeGierbera6.jpeg",
     "categoria": "Ramos",
