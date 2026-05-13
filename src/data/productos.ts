@@ -27,11 +27,11 @@ export const productos: Producto[] = [
 
     /*INICIO BOX*/ 
     "id": "prod-1",
-    "name": "Caja 12 Rosas",
+    "name": "Caja 12 Rosas + chocolates",
     "price": 24000,
     "hasCarousel": true,
     "images": [
-      "/productos/cajas/boxRed2.jpeg",
+      "/productos/cajas/boxRed1.mp4",
     ],
     "image": "/productos/cajas/boxRed1.jpeg",
     "categoria": "Ramos",
@@ -39,6 +39,41 @@ export const productos: Producto[] = [
     "description": "Hermoso detalle para regalar."
   },
   {
+    "id": "prod-2",
+    "name": "Centro de mesa Primaveral grande",
+    "price": 35000,
+    "hasCarousel": true,
+    "images": [
+      "/productos/cajas/centroBig2.jpeg","/productos/cajas/centroBig1.mp4"
+    ],
+    "image": "/productos/cajas/centroBig1.jpeg",
+    "categoria": "Ramos",
+    "subcategoria": "Cajas y Jarrones",
+    "description": "Hermoso detalle para regalar."
+  },
+  {
+    "id": "prod-3",
+    "name": "Centro de mesa Primaveral pequeño",
+    "price": 12000,
+    "hasCarousel": true,
+    "images": [
+      "/productos/cajas/centroPeq2.jpeg","/productos/cajas/centroPeq1.mp4"
+    ],
+    "image": "/productos/cajas/centroPeq1.jpeg",
+    "categoria": "Ramos",
+    "subcategoria": "Cajas y Jarrones",
+    "description": "Hermoso detalle para regalar."
+  },
+  {
+    "id": "prod-4",
+    "name": "Centro de mesa Primaveral Combo",
+    "price": 50000,
+    "image": "/productos/cajas/centroMesaCompleto.jpeg",
+    "categoria": "Ramos",
+    "subcategoria": "Cajas y Jarrones",
+    "description": "Hermoso detalle para regalar."
+  },
+  /*{
     "id": "prod-3",
     "name": "Caja 12 Rosas",
     "price": 7500,
@@ -50,7 +85,7 @@ export const productos: Producto[] = [
     "categoria": "Ramos",
     "subcategoria": "Cajas y Jarrones",
     "description": "Hermoso detalle para regalar."
-  },
+  },*/
   /*FINAL BOX*/ 
   /*INICIO DULCES*/
 
@@ -933,8 +968,17 @@ export const productos: Producto[] = [
   /*FINAL BODA*/ 
   /*INICO RAMOS GRANDES*/ 
   {
+    "id": "prod-143",
+    "name": "Ramo de chocolates",
+    "price": 20000,
+    "image": "/productos/ramos/grandes/ramBigChoco1.jpeg",
+    "categoria": "Ramos",
+    "subcategoria": "Ramos Grandes",
+    "description": "Hermoso detalle para regalar."
+  },
+  {
     "id": "prod-133",
-    "name": "Ramo Rosa",
+    "name": "Ramo Rosa 20 rosas",
     "price": 30000,
     "hasCarousel": true,
     "images": [
@@ -974,7 +1018,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-134",
-    "name": "Ramo Girasol",
+    "name": "Ramo 12 girasoles con astromelias",
     "hasCarousel": true,
     "images": [
       "/productos/ramos/grandes/ramBigGirasol2.jpeg",
@@ -982,6 +1026,22 @@ export const productos: Producto[] = [
     ],
     "price": 30000,
     "image": "/productos/ramos/grandes/ramBigGirasol1.jpeg",
+    "categoria": "Ramos",
+    "subcategoria": "Ramos Grandes",
+    "description": "Hermoso detalle para regalar."
+  },
+  {
+    "id": "prod-142",
+    "name": "Ramo Primaveral pequeño",
+    "price": 15000,
+    "hasCarousel": true,
+    "images": [
+      
+      
+      "/productos/ramos/grandes/ramBigPrimaveral11.jpeg",
+      "/productos/ramos/grandes/ramBigPrimaveral9.mp4",
+    ],
+    "image": "/productos/ramos/grandes/ramBigPrimaveral9.jpeg",
     "categoria": "Ramos",
     "subcategoria": "Ramos Grandes",
     "description": "Hermoso detalle para regalar."
@@ -1016,7 +1076,7 @@ export const productos: Producto[] = [
       "/productos/ramos/grandes/ramBigMarg2.jpeg",
       "/productos/ramos/grandes/ramBigMarg1.mp4"
     ],
-    "price": 45000,
+    "price": 15000,
     "image": "/productos/ramos/grandes/ramBigMarg1.jpeg",
     "categoria": "Ramos",
     "subcategoria": "Ramos Grandes",
@@ -1024,7 +1084,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-104",
-    "name": "Ramo Tulipán",
+    "name": "Ramo 20 Tulipanes 2 colores",
     "price": 36000,
     "hasCarousel": true,
     "images": [
@@ -1050,8 +1110,8 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-103",
-    "name": "Ramo Primaveral",
-    "price": 25000,
+    "name": "Ramo Primaveral + 5 chocolates",
+    "price": 30000,
     "image": "/productos/ramos/grandes/ram12BigPrima3.png",
     "categoria": "Ramos",
     "subcategoria": "Ramos Grandes",
@@ -1081,7 +1141,7 @@ export const productos: Producto[] = [
   },*/
   {
     "id": "prod-128",
-    "name": "Ramo Rosa",
+    "name": "Ramo de 20 rosas y claveles",
     "price": 30000,
     "hasCarousel": true,
     "images": [
@@ -1094,7 +1154,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-125",
-    "name": "Ramo Rosa",
+    "name": "Ramo 12 rosas con eucalipto",
     "price": 25000,
     "image": "/productos/ramos/grandes/ramoPre3.png",
     "categoria": "Ramos",
@@ -1112,7 +1172,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-127",
-    "name": "Ramo Rosa",
+    "name": "Ramo de 20 rosas con follaje",
     "price": 30000,
     "image": "/productos/ramos/grandes/ramoPre5.png",
     "categoria": "Ramos",
@@ -1177,7 +1237,7 @@ export const productos: Producto[] = [
   {
     "id": "prod-154",
     "name": "4 Girasoles",
-    "price": 14000,
+    "price": 12000,
     "image": "/productos/ramos/peque/ramPeqGirasol2.jpeg",
     "categoria": "Ramos",
     "subcategoria": "Ramos pequeños",
@@ -1186,7 +1246,7 @@ export const productos: Producto[] = [
   {
     "id": "prod-155",
     "name": "4 Girasoles",
-    "price": 14000,
+    "price": 12000,
     "image": "/productos/ramos/peque/ramPeqGirasol3.jpeg",
     "categoria": "Ramos",
     "subcategoria": "Ramos pequeños",
@@ -1213,7 +1273,7 @@ export const productos: Producto[] = [
   {
     "id": "prod-148",
     "name": "Rosa/Girasol/Gerbera",
-    "price": 7500,
+    "price": 6000,
     "image": "/productos/ramos/peque/ram3PeqGirarsolGierberaRosa1.png",
     "categoria": "Ramos",
     "subcategoria": "Ramos pequeños",
@@ -1228,7 +1288,7 @@ export const productos: Producto[] = [
     "subcategoria": "Ramos pequeños",
     "description": "Hermoso detalle para regalar."
   },
-  {
+ /*{
     "id": "prod-145",
     "name": "Girasol/Gerbera",
     "price": 25000,
@@ -1236,17 +1296,17 @@ export const productos: Producto[] = [
     "categoria": "Ramos",
     "subcategoria": "Ramos pequeños",
     "description": "Hermoso detalle para regalar."
-  },
+  },*/
   {
     "id": "prod-142",
-    "name": "2 Gerberas",
+    "name": "3 Gerberas",
     "price": 6000,
     "image": "/productos/ramos/peque/ram2PeGierbera1.png",
     "categoria": "Ramos",
     "subcategoria": "Ramos pequeños",
     "description": "Hermoso detalle para regalar."
   },
-  {
+  /*{
     "id": "prod-144",
     "name": "2 Gerberas",
     "price": 6000,
@@ -1254,11 +1314,11 @@ export const productos: Producto[] = [
     "categoria": "Ramos",
     "subcategoria": "Ramos pequeños",
     "description": "Hermoso detalle para regalar."
-  },
+  },*/
   {
     "id": "prod-146",
     "name": "2 Rosas",
-    "price": 6000,
+    "price": 4500,
     "image": "/productos/ramos/peque/ram2PeqRosa1.png",
     "categoria": "Ramos",
     "subcategoria": "Ramos pequeños",
@@ -1266,7 +1326,7 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-156",
-    "name": "1 Girasol",
+    "name": "Girasol con eucalipto y gipsofilia",
     "price": 4500,
     "image": "/productos/ramos/peque/uniGirasol4.png",
     "categoria": "Ramos",
@@ -1277,16 +1337,16 @@ export const productos: Producto[] = [
     "id": "prod-150",
     "name": "2 Lirios/1Rosa/1Clavel",
     "price": 9000,
-    "image": "/productos/ramos/peque/ram4PeLirioRosaClavel2.jpeg",
+    "image": "/productos/ramos/peque/ram4PeLirioRosaClavel1.png",
     hasCarousel: true,
     images: [
-      "/productos/ramos/peque/ram4PeLirioRosaClavel1.png",
+      "/productos/ramos/peque/ram4PeLirioRosaClavel2.png",
     ],
     "categoria": "Ramos",
     "subcategoria": "Ramos pequeños",
     "description": "Hermoso detalle para regalar."
   },
-  {
+  /*{
     "id": "prod-143",
     "name": "2 Gerberas",
     "price": 6000,
@@ -1294,7 +1354,7 @@ export const productos: Producto[] = [
     "categoria": "Ramos",
     "subcategoria": "Ramos pequeños",
     "description": "Hermoso detalle para regalar."
-  },
+  },*/
   {
     "id": "prod-135",
     "name": "Gerbera",

@@ -35,17 +35,14 @@ const Index = () => {
         }} />
         <div className="container relative grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-8 animate-fade-up">
-            <p className="flex items-center gap-3 text-xs tracking-[0.4em] uppercase text-primary">
-              <span className="gold-line" /> Floristería Boutique · CR
-            </p>
+        
             <h1 className="font-serif text-5xl md:text-7xl xl:text-8xl leading-[0.95] text-foreground">
               Flores que <br />
               <span className="italic text-gradient-gold">iluminan</span> <br />
               emociones.
             </h1>
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-              Piezas únicas confeccionadas a mano para hacer de cada momento
-              una memoria inolvidable.
+              Hacemos que tus momentos sean especiales e inolvidables.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Link
@@ -62,17 +59,26 @@ const Index = () => {
                 Miembro Golden
               </Link>
             </div>
-            <div className="flex gap-8 pt-6 border-t border-border max-w-md">
+            {/* VALUE PROPS */}
+      <section className="border-y border-border bg-card">
+        <div className="container grid grid-cols-2 lg:grid-cols-4 gap-8 py-12">
+          {[
+            { icon: Truck, title: "Envíos", desc: "Gran Área Metropolitana" },
+            { icon: Heart, title: "Hecho a mano", desc: "Cada arreglo es único" },
+            { icon: Award, title: "Flores premium", desc: "Frescura garantizada" },
+            { icon: Sparkles, title: "Empaque de lujo", desc: "Listo para regalar" },
+          ].map(({ icon: Icon, title, desc }) => (
+            <div key={title} className="flex items-center gap-4">
+              <Icon className="text-primary shrink-0" size={28} strokeWidth={1.2} />
               <div>
-                <p className="font-serif text-3xl text-primary">500+</p>
-                <p className="text-xs tracking-wider uppercase text-muted-foreground">Clientes felices</p>
-              </div>
-              
-              <div>
-                <p className="font-serif text-3xl text-primary">100%</p>
-                <p className="text-xs tracking-wider uppercase text-muted-foreground">Hecho a mano</p>
+                <p className="font-serif text-lg leading-tight">{title}</p>
+                <p className="text-xs text-muted-foreground">{desc}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </section>
+            
           </div>
 
           <div className="lg:col-span-6 relative animate-fade-in">
@@ -98,25 +104,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* VALUE PROPS */}
-      <section className="border-y border-border bg-card">
-        <div className="container grid grid-cols-2 lg:grid-cols-4 gap-8 py-12">
-          {[
-            { icon: Truck, title: "Envíos", desc: "Gran Área Metropolitana" },
-            { icon: Heart, title: "Hecho a mano", desc: "Cada arreglo es único" },
-            { icon: Award, title: "Flores premium", desc: "Frescura garantizada" },
-            { icon: Sparkles, title: "Empaque de lujo", desc: "Listo para regalar" },
-          ].map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="flex items-center gap-4">
-              <Icon className="text-primary shrink-0" size={28} strokeWidth={1.2} />
-              <div>
-                <p className="font-serif text-lg leading-tight">{title}</p>
-                <p className="text-xs text-muted-foreground">{desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      
 
       {/* RAMO DEL MES */}
       <section className="container py-24 md:py-32">
@@ -190,13 +178,13 @@ const Index = () => {
       <section className="bg-gradient-cream py-24 md:py-32">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-            <p className="text-xs tracking-[0.4em] uppercase text-primary">Nuestro arte</p>
+            
             <h2 className="font-serif text-5xl md:text-6xl">
-              Colecciones <span className="italic text-gradient-gold">curadas</span>
+              Nuestras <span className="italic text-gradient-gold">colecciones</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed">
               Cada fecha merece ser celebrada. Descubre nuestras colecciones diseñadas
-              para acompañar los momentos que importan.
+              para ti.
             </p>
           </div>
 
