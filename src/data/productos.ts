@@ -39,25 +39,13 @@ export const productos: Producto[] = [
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-2",
-    "name": "Centro de mesa Primaveral grande",
-    "price": 35000,
-    "hasCarousel": true,
-    "images": [
-      "/productos/cajas/centroBig2.jpeg","/productos/cajas/centroBig1.mp4"
-    ],
-    "image": "/productos/cajas/centroBig1.jpeg",
-    "categoria": "Ramos",
-    "subcategoria": "Cajas y Jarrones",
-    "description": "Hermoso detalle para regalar."
-  },
-  {
-    "id": "prod-3",
+    "id": "prod-232",
     "name": "Centro de mesa Primaveral pequeño",
     "price": 12000,
     "hasCarousel": true,
     "images": [
-      "/productos/cajas/centroPeq2.jpeg","/productos/cajas/centroPeq1.mp4"
+      "/productos/cajas/centroPeq2.jpeg",
+      "/productos/cajas/centroPeq1.mp4",
     ],
     "image": "/productos/cajas/centroPeq1.jpeg",
     "categoria": "Ramos",
@@ -65,7 +53,7 @@ export const productos: Producto[] = [
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-4",
+    "id": "prod-233",
     "name": "Centro de mesa Primaveral Combo",
     "price": 50000,
     "image": "/productos/cajas/centroMesaCompleto.jpeg",
@@ -982,7 +970,8 @@ export const productos: Producto[] = [
     "price": 30000,
     "hasCarousel": true,
     "images": [
-      "/productos/ramos/grandes/ramBigRosa2.jpeg","/productos/ramos/grandes/ramBigRosa1.mp4"
+      "/productos/ramos/grandes/ramBigRosa2.jpeg",
+      "/productos/ramos/grandes/ramBigRosa1.mp4",
     ],
     "image": "/productos/ramos/grandes/ramBigRosa1.jpeg",
     "categoria": "Ramos",
@@ -995,7 +984,7 @@ export const productos: Producto[] = [
     "price": 20000,
     "hasCarousel": true,
     "images": [
-      "/productos/ramos/grandes/ramBigPrimaveral2.jpeg"
+      "/productos/ramos/grandes/ramBigPrimaveral2.jpeg",
     ],
     "image": "/productos/ramos/grandes/ramBigPrimaveral1.jpeg",
     "categoria": "Ramos",
@@ -1031,21 +1020,21 @@ export const productos: Producto[] = [
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-142",
+    "id": "prod-108",
     "name": "Ramo Primaveral pequeño",
-    "price": 15000,
     "hasCarousel": true,
     "images": [
-      
-      
+      "/productos/ramos/grandes/ramBigPrimaveral10.jpeg",
       "/productos/ramos/grandes/ramBigPrimaveral11.jpeg",
       "/productos/ramos/grandes/ramBigPrimaveral9.mp4",
     ],
+    "price": 15000,
     "image": "/productos/ramos/grandes/ramBigPrimaveral9.jpeg",
     "categoria": "Ramos",
     "subcategoria": "Ramos Grandes",
     "description": "Hermoso detalle para regalar."
   },
+  
   {
     "id": "prod-116",
     "name": "Ramo Primaveral",
@@ -1074,7 +1063,7 @@ export const productos: Producto[] = [
     "hasCarousel": true,
     "images": [
       "/productos/ramos/grandes/ramBigMarg2.jpeg",
-      "/productos/ramos/grandes/ramBigMarg1.mp4"
+      "/productos/ramos/grandes/ramBigMarg1.mp4",
     ],
     "price": 15000,
     "image": "/productos/ramos/grandes/ramBigMarg1.jpeg",
@@ -1088,13 +1077,14 @@ export const productos: Producto[] = [
     "price": 36000,
     "hasCarousel": true,
     "images": [
-      "/productos/ramos/grandes/ram16BigTuli2.png"
+      "/productos/ramos/grandes/ram16BigTuli2.png",
     ],
     "image": "/productos/ramos/grandes/ram16BigTuli1.png",
     "categoria": "Ramos",
     "subcategoria": "Ramos Grandes",
     "description": "Hermoso detalle para regalar."
   },
+  
   {
     "id": "prod-100",
     "name": "Ramo Primaveral",
