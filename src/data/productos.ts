@@ -39,9 +39,23 @@ export const productos: Producto[] = [
     "description": "Hermoso detalle para regalar."
   },
   {
+    "id": "prod-2",
+    "name": "Centro de mesa Primaveral grande",
+    "price": 35000,
+    "hasCarousel": true,
+    "images": [
+      "/productos/cajas/centroBig2.jpeg",
+      "/productos/cajas/centroBig1.mp4",
+    ],
+    "image": "/productos/cajas/centroBig1.jpeg",
+    "categoria": "Ramos",
+    "subcategoria": "Cajas y Jarrones",
+    "description": "Hermoso detalle para regalar."
+  },
+  {
     "id": "prod-232",
     "name": "Centro de mesa Primaveral pequeño",
-    "price": 12000,
+    "price": 10000,
     "hasCarousel": true,
     "images": [
       "/productos/cajas/centroPeq2.jpeg",
@@ -56,7 +70,20 @@ export const productos: Producto[] = [
     "id": "prod-233",
     "name": "Centro de mesa Primaveral Combo",
     "price": 50000,
-    "image": "/productos/cajas/centroMesaCompleto.jpeg",
+    "image": "/productos/cajas/centroMesaCompleto1.jpeg",
+    "categoria": "Ramos",
+    "subcategoria": "Cajas y Jarrones",
+    "description": "Hermoso detalle para regalar."
+  },
+  {
+    "id": "prod-293",
+    "name": "Base Primaveral mediana",
+    "price": 12000,
+    "hasCarousel": true,
+    "images": [
+      "/productos/cajas/centroPeq4.jpeg",
+    ],
+    "image": "/productos/cajas/centroPeq3.jpeg",
     "categoria": "Ramos",
     "subcategoria": "Cajas y Jarrones",
     "description": "Hermoso detalle para regalar."
@@ -956,6 +983,33 @@ export const productos: Producto[] = [
   /*FINAL BODA*/ 
   /*INICO RAMOS GRANDES*/ 
   {
+    "id": "prod-128",
+    "name": "Ramo 72 rosas",
+    "price": 60000,
+    "hasCarousel": true,
+    "images": [
+      "/productos/ramos/grandes/ramoBig721.jpg",
+    ],
+    "image": "/productos/ramos/grandes/ramoBig722.jpeg",
+    "categoria": "Ramos",
+    "subcategoria": "Ramos Grandes",
+    "description": "Hermoso detalle para regalar."
+  },
+  {
+    "id": "prod-128",
+    "name": "Ramo Primaveral",
+    "price": 25000,
+    "hasCarousel": true,
+    "images": [
+      "/productos/ramos/grandes/ramoBigGerbera1.jpeg",
+      "/productos/ramos/grandes/ramoBigGerbera1.mp4",
+    ],
+    "image": "/productos/ramos/grandes/ramoBigGerbera2.jpeg",
+    "categoria": "Ramos",
+    "subcategoria": "Ramos Grandes",
+    "description": "Hermoso detalle para regalar."
+  },
+  {
     "id": "prod-143",
     "name": "Ramo de chocolates",
     "price": 20000,
@@ -1020,21 +1074,21 @@ export const productos: Producto[] = [
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-108",
+    "id": "prod-142",
     "name": "Ramo Primaveral pequeño",
+    "price": 15000,
     "hasCarousel": true,
     "images": [
-      "/productos/ramos/grandes/ramBigPrimaveral10.jpeg",
+      
+      
       "/productos/ramos/grandes/ramBigPrimaveral11.jpeg",
       "/productos/ramos/grandes/ramBigPrimaveral9.mp4",
     ],
-    "price": 15000,
     "image": "/productos/ramos/grandes/ramBigPrimaveral9.jpeg",
     "categoria": "Ramos",
     "subcategoria": "Ramos Grandes",
     "description": "Hermoso detalle para regalar."
   },
-  
   {
     "id": "prod-116",
     "name": "Ramo Primaveral",
@@ -1084,7 +1138,6 @@ export const productos: Producto[] = [
     "subcategoria": "Ramos Grandes",
     "description": "Hermoso detalle para regalar."
   },
-  
   {
     "id": "prod-100",
     "name": "Ramo Primaveral",
@@ -1197,6 +1250,7 @@ export const productos: Producto[] = [
     "subcategoria": "Ramos Grandes",
     "description": "Hermoso detalle para regalar."
   },
+  
   
   
   /*{

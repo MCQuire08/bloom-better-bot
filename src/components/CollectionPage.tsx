@@ -20,12 +20,12 @@ const CollectionPage = ({ eyebrow, title, description, heroImage, products }: Pr
             {title}
           </h1>
           <div className="w-16 h-px bg-primary" />
-          <p className="text-lg text-muted-foreground max-w-md leading-relaxed">{description}</p>
+          {/*<p className="text-lg text-muted-foreground max-w-md leading-relaxed">{description}</p> */}
         </div>
-        <div className="relative">
+        {/*<div className="relative">
           <div className="absolute -inset-4 bg-gradient-gold opacity-20 blur-3xl" />
           <img src={heroImage} alt={title} className="relative w-full aspect-[4/5] object-cover shadow-elegant" />
-        </div>
+        </div>*/}
       </div>
     </section>
 

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Truck, Heart, Sparkles, Award } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import { useCart } from "@/context/CartContext";
-import heroImg from "@/assets/hero-bouquet.jpg";
+import heroImg from "@/assets/banner.png";
 import grandesImg from "@/assets/collection-grandes.jpg";
 import pequenosImg from "@/assets/collection-pequenos.jpg";
 import bodaImg from "@/assets/collection-boda.jpg";
@@ -61,12 +61,11 @@ const Index = () => {
             </div>
             {/* VALUE PROPS */}
       <section className="border-y border-border bg-card">
-        <div className="container grid grid-cols-2 lg:grid-cols-4 gap-8 py-12">
+        <div className="container grid grid-cols-2 lg:grid-cols-3 gap-8 py-12">
           {[
             { icon: Truck, title: "Envíos", desc: "Gran Área Metropolitana" },
-            { icon: Heart, title: "Hecho a mano", desc: "Cada arreglo es único" },
-            { icon: Award, title: "Flores premium", desc: "Frescura garantizada" },
-            { icon: Sparkles, title: "Empaque de lujo", desc: "Listo para regalar" },
+            { icon: Heart, title: "Diseños", desc: "Cada arreglo es único" },
+            { icon: Award, title: "Flores", desc: "Frescura garantizada" },
           ].map(({ icon: Icon, title, desc }) => (
             <div key={title} className="flex items-center gap-4">
               <Icon className="text-primary shrink-0" size={28} strokeWidth={1.2} />
@@ -87,18 +86,18 @@ const Index = () => {
               <img
                 src={heroImg}
                 alt="Ramo de rosas blancas con lazo dorado"
-                width={1080}
-                height={1350}
+                width={1054}
+                height={1492}
                 className="w-full h-full object-cover shadow-elegant"
               />
-              <div className="absolute -bottom-6 -left-6 bg-background p-6 shadow-soft max-w-[200px] hidden md:block">
+             {/*   <div className="absolute -bottom-6 -left-6 bg-background p-6 shadow-soft max-w-[200px] hidden md:block">
                 <p className="text-[10px] tracking-[0.3em] uppercase text-primary mb-1">Nuevo</p>
                 <p className="font-serif text-lg leading-tight">Colección Primaveral 2026</p>
               </div>
               <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground w-24 h-24 rounded-full flex flex-col items-center justify-center text-center hidden md:flex">
                 <Sparkles size={16} />
                 <p className="text-[9px] tracking-widest uppercase mt-1 leading-tight">Hecho<br />a mano</p>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
@@ -110,7 +109,7 @@ const Index = () => {
       <section className="container py-24 md:py-32">
         {/* Mobile Title */}
         <div className="block lg:hidden mb-8 space-y-4">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Mayo</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Julio</p>
           <h2 className="font-serif text-5xl md:text-6xl leading-tight">
             Girasol <span className="italic text-gradient-gold">12 unidades</span>
           </h2>
@@ -131,7 +130,7 @@ const Index = () => {
           <div className="space-y-6 order-2">
             {/* Desktop Title */}
             <div className="hidden lg:block space-y-6">
-              <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Mayo</p>
+              <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Julio</p>
               <h2 className="font-serif text-5xl md:text-6xl leading-tight">
                 Girasol <span className="italic text-gradient-gold">12 unidades</span>
               </h2>
