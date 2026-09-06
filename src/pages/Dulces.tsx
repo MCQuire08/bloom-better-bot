@@ -11,6 +11,7 @@ const Dulces = () => (
     description="Selección de chocolatería fina y dulces gourmet. El complemento perfecto para acompañar tus flores."
     heroImage={img}
     products={products}
+    catalog={{ subcategory: "dulces" }}
   />
 );
 

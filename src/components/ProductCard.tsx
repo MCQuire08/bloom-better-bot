@@ -3,6 +3,7 @@ import { useCart } from "@/context/CartContext";
 import { useState } from "react";
 
 export type Product = {
+  sku?: string;
   name: string;
   price: number;
   image: string;
@@ -31,7 +32,7 @@ const ProductCard = ({ product }: { product: Product }) => {
 
   const handleAdd = (e: React.MouseEvent) => {
     e.stopPropagation();
-    addItem({ id, name: product.name, price: product.price, image: product.image });
+    addItem({ id, sku: product.sku || `LEGACY-${id.toUpperCase()}`, name: product.name, price: product.price, image: product.image });
   };
 
   const nextImage = (e: React.MouseEvent) => {

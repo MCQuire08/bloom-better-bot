@@ -11,6 +11,7 @@ const CajasJarrones = () => (
     description="Arreglos en cajas premium y jarrones de cristal. Una presentación elegante que perdura más allá del momento."
     heroImage={img}
     products={products}
+    catalog={{ subcategory: "cajas-y-jarrones" }}
   />
 );
 

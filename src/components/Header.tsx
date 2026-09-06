@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X, ShoppingBag, ChevronDown } from "lucide-react";
+import { Menu, X, ShoppingBag, ChevronDown, CircleUserRound } from "lucide-react";
 import Logo from "./Logo";
 import { useCart } from "@/context/CartContext";
 
@@ -9,6 +9,7 @@ type NavItem = { to?: string; label: string; children?: SubItem[] };
 
 const navItems: NavItem[] = [
   { to: "/", label: "Inicio" },
+  { to: "/crea-tu-ramo", label: "Crea tu ramo" },
   {
     label: "Ramos",
     children: [
@@ -124,6 +125,7 @@ const Header = () => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
+          <Link to="/cuenta" aria-label="Mi cuenta" className="p-2 text-foreground hover:text-primary transition-colors"><CircleUserRound size={20} /></Link>
           <Link
             to="/suscripcion"
             className="text-xs tracking-[0.2em] uppercase border border-primary text-primary px-5 py-2.5 hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -145,6 +147,7 @@ const Header = () => {
         </div>
 
         <div className="lg:hidden flex items-center gap-1">
+          <Link to="/cuenta" aria-label="Mi cuenta" className="p-2 text-foreground hover:text-primary transition-colors"><CircleUserRound size={20} /></Link>
           <button
             onClick={openCart}
             aria-label="Abrir carrito"

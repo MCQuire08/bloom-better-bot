@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Truck, Heart, Sparkles, Award } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import { useCart } from "@/context/CartContext";
-import heroImg from "@/assets/banner.png";
+import heroImg from "@/assets/bannerSept.png";
 import grandesImg from "@/assets/collection-grandes.jpg";
 import pequenosImg from "@/assets/collection-pequenos.jpg";
 import bodaImg from "@/assets/collection-boda.jpg";
@@ -109,7 +109,7 @@ const Index = () => {
       <section className="container py-24 md:py-32">
         {/* Mobile Title */}
         <div className="block lg:hidden mb-8 space-y-4">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Julio</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Agosto</p>
           <h2 className="font-serif text-5xl md:text-6xl leading-tight">
             Girasol <span className="italic text-gradient-gold">12 unidades</span>
           </h2>
@@ -130,7 +130,7 @@ const Index = () => {
           <div className="space-y-6 order-2">
             {/* Desktop Title */}
             <div className="hidden lg:block space-y-6">
-              <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Julio</p>
+              <p className="text-xs tracking-[0.4em] uppercase text-primary">Ramo del mes · Agosto</p>
               <h2 className="font-serif text-5xl md:text-6xl leading-tight">
                 Girasol <span className="italic text-gradient-gold">12 unidades</span>
               </h2>
@@ -144,7 +144,7 @@ const Index = () => {
             
             <div className="flex items-baseline gap-3">
               <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Precio</span>
-              <span className="font-serif text-4xl text-primary">₡ 25 000</span>
+              <span className="font-serif text-4xl text-primary">₡ 20 000</span>
             </div>
             <div className="flex gap-4 pt-4">
               <button

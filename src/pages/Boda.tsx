@@ -11,6 +11,7 @@ const Boda = () => (
     description="El día más importante merece flores que cuenten tu historia. Diseños hechos a medida, con consultoría personalizada para tu boda soñada."
     heroImage={img}
     products={products}
+    catalog={{ subcategory: "boda" }}
   />
 );
 

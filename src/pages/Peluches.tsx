@@ -11,6 +11,7 @@ const Peluches = () => (
     description="Peluches suaves y entrañables, ideales para acompañar un ramo y multiplicar la sonrisa."
     heroImage={img}
     products={products}
+    catalog={{ subcategory: "peluches" }}
   />
 );
 

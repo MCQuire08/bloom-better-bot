@@ -1,5 +1,8 @@
 import PageLayout from "./PageLayout";
 import ProductCard, { Product } from "./ProductCard";
+import { useQuery } from "@tanstack/react-query";
+import { customerApi } from "@/lib/api";
+import { azureConfigured } from "@/lib/azure";
 
 type Props = {
   eyebrow: string;
@@ -7,9 +10,13 @@ type Props = {
   description: string;
   heroImage: string;
   products: Product[];
+  catalog?: { category?: string; subcategory?: string };
 };
 
-const CollectionPage = ({ eyebrow, title, description, heroImage, products }: Props) => (
+const CollectionPage = ({ eyebrow, title, description, heroImage, products, catalog }: Props) => {
+  const liveCatalog = useQuery({ queryKey: ["catalog", catalog], queryFn: () => customerApi.catalog(catalog), enabled: azureConfigured });
+  const displayedProducts = azureConfigured ? (liveCatalog.data || []) : products;
+  return (
   <PageLayout>
     {/* Hero */}
     <section className="relative pt-32 pb-20 bg-gradient-hero overflow-hidden">
@@ -32,12 +39,15 @@ const CollectionPage = ({ eyebrow, title, description, heroImage, products }: Pr
     {/* Products */}
     <section className="container py-24">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
-        {products.map((p, i) => (
+        {liveCatalog.isLoading && <p className="col-span-full text-center text-muted-foreground">Cargando catálogo…</p>}
+        {liveCatalog.isError && <p className="col-span-full text-center text-destructive">No pudimos cargar los productos.</p>}
+        {displayedProducts.map((p, i) => (
           <ProductCard key={p.id || p.name + i} product={p} />
         ))}
       </div>
     </section>
   </PageLayout>
-);
+  );
+};
 
 export default CollectionPage;

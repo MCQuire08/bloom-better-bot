@@ -11,6 +11,7 @@ const PerfumesHombre = () => (
     description="Fragancias masculinas con carácter. Notas amaderadas, especiadas y frescas para cada ocasión."
     heroImage={img}
     products={products}
+    catalog={{ subcategory: "hombres" }}
   />
 );
 

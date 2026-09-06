@@ -3,6 +3,8 @@ import { z } from "zod";
 import { User, Package, Calendar } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { toast } from "@/hooks/use-toast";
+import { useAuth } from "@/context/AuthContext";
+import { customerApi } from "@/lib/api";
 
 const PROVINCIAS = [
   "San José",
@@ -63,6 +65,7 @@ const inputCls =
 
 const CheckoutForm = ({ onCancel }: { onCancel: () => void }) => {
   const { items, total, clear } = useCart();
+  const { account, configured } = useAuth();
   const [data, setData] = useState<FormData>(initial);
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [submitting, setSubmitting] = useState(false);
@@ -70,7 +73,7 @@ const CheckoutForm = ({ onCancel }: { onCancel: () => void }) => {
   const set = <K extends keyof FormData>(k: K, v: FormData[K]) =>
     setData((d) => ({ ...d, [k]: v }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (items.length === 0) {
       toast({ title: "Tu carrito está vacío", variant: "destructive" });
@@ -90,10 +93,30 @@ const CheckoutForm = ({ onCancel }: { onCancel: () => void }) => {
     setErrors({});
     setSubmitting(true);
 
+    if (configured && !account) {
+      toast({ title: "Inicia sesión para realizar tu pedido", description: "Así podrás acumular tus beneficios Golden Bloom.", variant: "destructive" });
+      setSubmitting(false);
+      return;
+    }
+
     const d = result.data;
+    let orderId = "";
+    let registeredTotal = total;
+    if (account) {
+      try {
+        const created = await customerApi.createOrder(account, { items, delivery: d });
+        orderId = created.id;
+        registeredTotal = created.total;
+      } catch (error) {
+        toast({ title: "No pudimos registrar el pedido", description: error instanceof Error ? error.message : undefined, variant: "destructive" });
+        setSubmitting(false);
+        return;
+      }
+    }
     const fmtCRC = (n: number) => `₡ ${n.toLocaleString("es-CR")}`;
     const lines: string[] = [];
     lines.push("*🌸 NUEVO PEDIDO — GOLDEN BLOOM*");
+    if (orderId) lines.push(`Pedido: ${orderId}`);
     lines.push("");
     lines.push("*👤 Solicitante*");
     lines.push(`Nombre: ${d.nombre}`);
@@ -115,7 +138,7 @@ const CheckoutForm = ({ onCancel }: { onCancel: () => void }) => {
       lines.push(`• ${it.name} x${it.quantity} — ${fmtCRC(it.price * it.quantity)}`);
     });
     lines.push("");
-    lines.push(`*TOTAL: ${fmtCRC(total)}*`);
+    lines.push(`*TOTAL: ${fmtCRC(registeredTotal)}*`);
     if (d.mensaje && d.mensaje.trim().length > 0) {
       lines.push("");
       lines.push("*📝 Mensaje / notas*");

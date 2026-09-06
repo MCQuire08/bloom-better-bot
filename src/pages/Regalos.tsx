@@ -11,6 +11,7 @@ const Regalos = () => (
     description="Cajas de regalo curadas con detalles únicos. Combina flores, dulces, velas y más para crear el obsequio perfecto."
     heroImage={img}
     products={products}
+    catalog={{ category: "Regalos" }}
   />
 );
 

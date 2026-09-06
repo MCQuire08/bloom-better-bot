@@ -11,6 +11,7 @@ const Perfumes = () => (
     description="Fragancias inspiradas en nuestras flores favoritas. Elegancia embotellada para acompañarte cada día."
     heroImage={img}
     products={products}
+    catalog={{ category: "Perfumes" }}
   />
 );
 

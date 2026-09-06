@@ -11,6 +11,7 @@ const Pequenos = () => (
     description="Detalles delicados llenos de personalidad. Pequeños gestos que dicen mucho, ideales para sorprender en cualquier momento del día."
     heroImage={img}
     products={products}
+    catalog={{ subcategory: "ramos-pequenos" }}
   />
 );
 

@@ -2,10 +2,12 @@ import { createContext, useContext, useEffect, useMemo, useState, ReactNode } fr
 
 export type CartItem = {
   id: string;
+  sku?: string;
   name: string;
   price: number;
   image: string;
   quantity: number;
+  configuration?: Array<{ optionId: string; sku: string; name: string; quantity: number }>;
 };
 
 type CartContextValue = {

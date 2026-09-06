@@ -1,0 +1,25 @@
+export type OrderStatus = "pending" | "paid" | "cancelled";
+
+export type CustomerOrder = {
+  id: string;
+  createdAt: string;
+  total: number;
+  status: OrderStatus;
+  itemCount: number;
+};
+
+export type LoyaltySummary = {
+  completedPurchases: number;
+  cycleSpend: number;
+  freeShippingAvailable: boolean;
+  creditAvailable: number;
+};
+
+export type CustomerDashboard = {
+  isAdmin: boolean;
+  name: string;
+  email: string;
+  phone?: string;
+  loyalty: LoyaltySummary;
+  orders: CustomerOrder[];
+};

@@ -11,6 +11,7 @@ const Grandes = () => (
     description="Composiciones generosas que llenan cualquier espacio de color y aroma. Perfectas para aniversarios, sorpresas y declaraciones inolvidables."
     heroImage={img}
     products={products}
+    catalog={{ subcategory: "ramos-grandes" }}
   />
 );
 

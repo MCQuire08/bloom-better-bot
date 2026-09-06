@@ -11,6 +11,7 @@ const PerfumesMujer = () => (
     description="Fragancias femeninas inspiradas en jardines en flor. Elegancia embotellada para cada momento."
     heroImage={img}
     products={products}
+    catalog={{ subcategory: "mujeres" }}
   />
 );
 

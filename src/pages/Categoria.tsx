@@ -33,6 +33,7 @@ const Categoria = () => {
       description={`Explora nuestra selección de ${actualSubCategoria.toLowerCase()}.`}
       heroImage={heroImg}
       products={categoryProducts}
+      catalog={{ subcategory: subcategoria }}
     />
   );
 };

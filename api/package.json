@@ -1,0 +1,19 @@
+{
+  "name": "golden-bloom-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.7.2",
+    "jose": "^6.1.0",
+    "mssql": "^11.0.1"
+  },
+  "devDependencies": {
+    "@types/mssql": "^9.1.8",
+    "typescript": "^5.8.3"
+  }
+}
+

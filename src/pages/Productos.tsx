@@ -11,6 +11,7 @@ const Productos = () => (
     description="Explora nuestra selección completa de arreglos florales, diseñados para cada ocasión especial."
     heroImage={heroImg}
     products={productos}
+    catalog={{}}
   />
 );
 
