@@ -16,12 +16,13 @@ const navItems: NavItem[] = [
       { to: "/grandes", label: "Ramos Grandes" },
       { to: "/pequenos", label: "Ramos Pequeños" },
       { to: "/cajas-jarrones", label: "Cajas y Jarrones" },
-      { to: "/boda", label: "Boda" },
     ],
   },
+  { to: "/boda", label: "Boda" },
   {
     label: "Regalos",
     children: [
+      { to: "/regalos/cajas-dulces", label: "Cajas Dulces" },
       { to: "/regalos/dulces", label: "Dulces" },
       { to: "/regalos/peluches", label: "Peluches" },
       { to: "/regalos/globos", label: "Globos" },

@@ -14,6 +14,7 @@ import Regalos from "./pages/Regalos.tsx";
 import Globos from "./pages/Globos.tsx";
 import Septiembre21 from "./pages/Septiembre21.tsx";
 import Dulces from "./pages/Dulces.tsx";
+import CajasDulces from "./pages/CajasDulces.tsx";
 import Peluches from "./pages/Peluches.tsx";
 import Perfumes from "./pages/Perfumes.tsx";
 import PerfumesHombre from "./pages/PerfumesHombre.tsx";
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/boda" element={<Boda />} />
             <Route path="/regalos" element={<Regalos />} />
             <Route path="/regalos/dulces" element={<Dulces />} />
+            <Route path="/regalos/cajas-dulces" element={<CajasDulces />} />
             <Route path="/regalos/peluches" element={<Peluches />} />
             <Route path="/regalos/globos" element={<Globos />} />
             <Route path="/21-septiembre" element={<Septiembre21 />} />

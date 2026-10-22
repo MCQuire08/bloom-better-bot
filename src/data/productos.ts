@@ -5,6 +5,7 @@ export type SubCategoria =
   | "Cajas y Jarrones" 
   | "Boda" 
   | "Dulces" 
+  | "Cajas Dulces"
   | "Peluches" 
   | "Globos"
   | "Hombres" 
@@ -89,16 +90,16 @@ export const productos: Producto[] = [
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-293",
+    "id": "prod-294",
     "name": "Globo con dulces Grande",
     "price": 15000,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/cajas/globoDulces1.jpeg",
-    "categoria": "Ramos",
-    "subcategoria": "Cajas y Jarrones",
+    "categoria": "Regalos",
+    "subcategoria": "Cajas Dulces",
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-293",
+    "id": "prod-295",
     "name": "Caja de dulces Grande",
     "price": 22500,
     "hasCarousel": true,
@@ -106,58 +107,58 @@ export const productos: Producto[] = [
       "https://grupoentregafotos.blob.core.windows.net/productos/cajas/cajaBigChoco1.mp4",
     ],
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/cajas/cajaBigChoco1.jpeg",
-    "categoria": "Ramos",
-    "subcategoria": "Cajas y Jarrones",
+    "categoria": "Regalos",
+    "subcategoria": "Cajas Dulces",
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-293",
+    "id": "prod-296",
     "name": "Caja de dulces mediana",
     "price": 16500,
     "hasCarousel": true,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/cajas/cajaMedChoco1.jpeg",
-    "categoria": "Ramos",
-    "subcategoria": "Cajas y Jarrones",
+    "categoria": "Regalos",
+    "subcategoria": "Cajas Dulces",
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-293",
+    "id": "prod-297",
     "name": "Caja de dulces pequeña",
     "price": 16500,
     "hasCarousel": true,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/cajas/cajaMedChoco2.jpeg",
-    "categoria": "Ramos",
-    "subcategoria": "Cajas y Jarrones",
+    "categoria": "Regalos",
+    "subcategoria": "Cajas Dulces",
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-293",
+    "id": "prod-298",
     "name": "Caja de dulces pequeña",
     "price": 12500,
     "hasCarousel": true,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/cajas/cajaMedChoco3.jpeg",
-    "categoria": "Ramos",
-    "subcategoria": "Cajas y Jarrones",
+    "categoria": "Regalos",
+    "subcategoria": "Cajas Dulces",
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-293",
+    "id": "prod-299",
     "name": "Caja grande decorada + globo con helio + 5 chocolates grandes premium *No se inlcuye precio de peluche ya que varia según elección.",
     "price": 19000,
     "hasCarousel": true,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/cajas/cajaPeluche1.jpeg",
-    "categoria": "Ramos",
-    "subcategoria": "Cajas y Jarrones",
+    "categoria": "Regalos",
+    "subcategoria": "Cajas Dulces",
     "description": "Hermoso detalle para regalar."
   },
   {
-    "id": "prod-293",
+    "id": "prod-300",
     "name": "Caja grande decorada + globo con helio + 4 chocolates grandes premium + tarjeta personalizada *No se inlcuye precio de peluche ya que varia según elección.",
     "price": 16500,
     "hasCarousel": true,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/cajas/cajaPeluche2.jpeg",
-    "categoria": "Ramos",
-    "subcategoria": "Cajas y Jarrones",
+    "categoria": "Regalos",
+    "subcategoria": "Cajas Dulces",
     "description": "Hermoso detalle para regalar."
   },
   /*{
@@ -958,8 +959,8 @@ export const productos: Producto[] = [
   /*RAMO*/ 
   {
     "id": "prod-85",
-    "name": "Ramo Girasol/Rosa",
-    "price": 20000,
+    "name": "Bouquet 10 Girasoles 8 mini rosas",
+    "price": 36000,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/ramos/boda/bouquet1.png",
     "categoria": "Ramos",
     "subcategoria": "Boda",
@@ -976,8 +977,8 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-87",
-    "name": "Ramo Rosa/Eucalipto",
-    "price": 20000,
+    "name": "Bouquet 20 Rosas con Eucalipto",
+    "price": 32000,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/ramos/boda/bouquet3.png",
     "categoria": "Ramos",
     "subcategoria": "Boda",
@@ -985,8 +986,8 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-88",
-    "name": "Ramo Rosa/Eucalipto",
-    "price": 20000,
+    "name": "Bouquet 24 rosas y Eucalipto",
+    "price": 40000,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/ramos/boda/bouquet4.png",
     "categoria": "Ramos",
     "subcategoria": "Boda",
@@ -994,8 +995,8 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-89",
-    "name": "Ramo Rosa/Eucalipto",
-    "price": 20000,
+    "name": "Bouquet 20 rosas, eucalipto y follaje",
+    "price": 40000,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/ramos/boda/bouquet5.png",
     "categoria": "Ramos",
     "subcategoria": "Boda",
@@ -1003,8 +1004,8 @@ export const productos: Producto[] = [
   },
   {
     "id": "prod-90",
-    "name": "Ramo Rosa/Lirio",
-    "price": 20000,
+    "name": "Bouquet Rosa con Lirio y follaje",
+    "price": 35000,
     "image": "https://grupoentregafotos.blob.core.windows.net/productos/ramos/boda/bouquet6.png",
     "categoria": "Ramos",
     "subcategoria": "Boda",
